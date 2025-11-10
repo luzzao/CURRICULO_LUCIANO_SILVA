@@ -1,0 +1,182 @@
+
+        * {    margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #b2bff8 0%, #764ba2 100%);
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgb(255, 255, 255);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #b9c6ff 0%, #7d6397 100%);
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+            margin-bottom: 20px;
+        }
+
+        .contato {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            font-size: 0.95em;
+        }
+
+        .contato-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            color: #002fff;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #536ec4;
+            font-weight: 600;
+        }
+
+        .sobre-mim {
+            color: #555;
+            font-size: 1.05em;
+            text-align: justify;
+        }
+
+
+        .experiencia-item, .educacao-item {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 3px solid #667eea;
+        }
+
+        .experiencia-item h3, .educacao-item h3 {
+            color: #333;
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+
+        .cargo, .curso {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .periodo {
+            color: #888;
+            font-style: italic;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+
+        .descricao {
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .habilidades {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .habilidade {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+            transition: transform 0.3s ease;
+        }
+
+        .habilidade:hover {
+            transform: translateY(-5px);
+        }
+
+        .idiomas {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .idioma {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .idioma h4 {
+            color: #333;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+
+        .nivel {
+            color: #1538d3;
+            font-weight: 600;
+        }
+
+        @media print {
+            body {
+                background: rgb(233, 231, 231);
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .contato {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
